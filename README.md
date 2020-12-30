@@ -35,11 +35,12 @@ THEN the saved events persist<br>
 Deployed application link: (https://diane-furlong.github.io/Work-Day-Scheduler/)
 
 
-Screenshot of deployed application:
-<img src="https://github.com/diane-furlong/Work-Day-Scheduler/blob/main/Assets/Screenshot-12.png"><br>
-<img src="https://github.com/diane-furlong/Work-Day-Scheduler/blob/main/Assets/Screenshot-confirm.png"><br>
+Screenshot of deployed application:<br>
+<img src="https://github.com/diane-furlong/Work-Day-Scheduler/blob/main/Assets/Screenshot-12.png" width="700px"><br><br>
+Screenshot of confirmation when the clear button is clicked:<br>
+<img src="https://github.com/diane-furlong/Work-Day-Scheduler/blob/main/Assets/Screenshot-confirm.png" width="700px"><br><br>
 
-Video of deployed application in action:
+Video of deployed application in action:<br>
 <video><source src="https://github.com/diane-furlong/Work-Day-Scheduler/blob/main/Assets/Workday-Scheduler-video.mp4" type="video/mp4"></video>
 
 ## Table of Contents
