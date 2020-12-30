@@ -42,7 +42,7 @@ $(document).ready(function() {
 
         let container = $(".container")
 
-        for (i=0; i < rows.length; i++){
+        for (i=0; i < hoursDisplay.length; i++){
 
             let hourRows = $("<div>")
             hourRows.attr("id", rows[i].time)
