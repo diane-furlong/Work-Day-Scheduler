@@ -44,21 +44,25 @@ $(document).ready(function() {
 
         for (i=0; i < hoursDisplay.length; i++){
 
+            //create rows for each hour that will house the three columns
             let hourRows = $("<div>")
             hourRows.attr("id", rows[i].time)
             hourRows.attr("number", rows[i].number)
             hourRows.attr("class", "row hour")
 
+            //create left column with each hour
             let timeCol = $("<div>").text(rows[i].time)
             timeCol.attr("class", "col-3 hourCol")
             hourRows.append(timeCol);
             hourRows.css("text-align", "center")
     
+            //create middle textboxes column
             let textboxCol = $("<textarea>")
             textboxCol.attr("id", "task"+ hoursDisplay[i].number)
             textboxCol.attr("class", "col-7 textboxCol")
             hourRows.append(textboxCol)
 
+            //create right save buttons column
             let btnCol = $("<button>")
             btnCol.attr("class","col-2 button")
             btnCol.attr("id", "button"+rows[i].number)
@@ -69,35 +73,16 @@ $(document).ready(function() {
 
             container.append(hourRows)
         }
-
-        //get items from local storage on page reload
-        let task9 = localStorage.getItem("task9")
-        $("#task9").text(task9)
-
-        let task10 = localStorage.getItem("task10")
-        $("#task10").text(task10)
-
-        let task11 = localStorage.getItem("task11")
-        $("#task11").text(task11)
-
-        let task12 = localStorage.getItem("task12")
-        $("#task12").text(task12)
-
-        let task13 = localStorage.getItem("task13")
-        $("#task13").text(task13)
-
-        let task14 = localStorage.getItem("task14")
-        $("#task14").text(task14)
-
-        let task15 = localStorage.getItem("task15")
-        $("#task15").text(task15)
-
-        let task16 = localStorage.getItem("task16")
-        $("#task16").text(task16)
-
-        let task17 = localStorage.getItem("task17")
-        $("#task17").text(task17)
     }
+
+    function getLSItem () {
+        const numberArray = [9, 10, 11, 12, 13, 14, 15, 16, 17]
+        const varArray = ["task9", "task10", "task11", "task12", "task13", "task14", "task15", "task16", "task17"]
+        for (i = 0; i < numberArray.length; i++) {
+            varArray[i]=localStorage.getItem("task"+numberArray[i])
+            $("#task" + numberArray[i]).text(varArray[i]);
+            }
+        }
 
     //setting the colors of each row depending on what time it currently is
     function hourRowColors(){
@@ -153,6 +138,7 @@ $(document).ready(function() {
     //call all the functions on page load
     createHourRows(hoursDisplay)
     buttonFunct(hoursDisplay)
+    getLSItem();
 
     hourRowColors()
     //update the colors each second (in case of hour changeover while on page)
