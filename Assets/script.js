@@ -138,12 +138,10 @@ $(document).ready(function() {
     //call all the functions on page load
     createHourRows(hoursDisplay)
     buttonFunct(hoursDisplay)
-    getLSItem();
-
-    hourRowColors()
+    getLSItem()
     //update the colors each second (in case of hour changeover while on page)
-    setInterval(hourRowColors(), 1000);
-
+    setInterval(hourRowColors(), 1000)
+    hourRowColors()
     clearBtn()
 
     //set up event listener for the clear button on click
