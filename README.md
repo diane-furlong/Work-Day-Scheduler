@@ -40,7 +40,7 @@ Screenshot of deployed application:<br>
 Screenshot of confirmation when the clear button is clicked:<br>
 <img src="https://github.com/diane-furlong/Work-Day-Scheduler/blob/main/Assets/Screenshot-confirm.png" width="700px"><br><br>
 
-<a href="https://github.com/diane-furlong/Work-Day-Scheduler/blob/main/Assets/Workday-Scheduler-video.mp4">Video of deployed application in action.</a>
+<a href="https://github.com/diane-furlong/Work-Day-Scheduler/blob/main/Assets/Workday-Scheduler-video.mp4">Click here for a video of the deployed application in action.</a>
 
 ## Table of Contents
 
