@@ -140,7 +140,7 @@ $(document).ready(function() {
     buttonFunct(hoursDisplay)
     getLSItem()
     //update the colors each second (in case of hour changeover while on page)
-    setInterval(hourRowColors(), 1000)
+    setInterval(hourRowColors, 1000)
     hourRowColors()
     clearBtn()
 
